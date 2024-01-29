@@ -1,5 +1,5 @@
 ##
-def check_password_strength(password):
+def check_password_strength(password): #密码格式
     # Password rules: At least 8 characters, containing at least one uppercase letter and one digit
     return len(password) >= 8 and any(char.isupper() for char in password) and any(char.isdigit() for char in password)
 
@@ -14,7 +14,7 @@ def login_program():
         username = input("Enter your username: ")
         password = input("Enter your password: ")
 
-        if username == correct_username and correct_password:
+        if username == correct_username and password == correct_password:
             print("Welcome!")
             break
         else:
