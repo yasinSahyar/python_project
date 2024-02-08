@@ -40,6 +40,26 @@ for kullanici in kullanici_listesi:
         print(kullanici.get('ad'))                             # yasin
 
 
+print("++++++++++++++++ yas eklemek +++++++++++++++++")
+
+kullanici_yaslari_listesi = [22,34,30,28]
+
+for kullanici ,yas in zip(kullanici_listesi,kullanici_yaslari_listesi):
+    if yas < 25:
+        print(kullanici)
+        #{'ad': 'isa', 'soyad': 'memet', 'uzmanlik': ['Front-end']}
 
 
+print("++++++++++++++++ asal sayi +++++++++++++++++")
 
+deger = 5
+x =deger -1
+while x > 1:
+    if deger %x == 0:
+        print('{} sayi asal dagil!'.format(deger))
+        break
+    else:
+        x -= 1
+
+else:
+        print('{} sayi asaldir!'.format(deger))
