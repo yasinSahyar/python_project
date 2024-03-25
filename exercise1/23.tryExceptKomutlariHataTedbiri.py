@@ -42,3 +42,23 @@ def tam_sayiya_cevir3():
         print('tam sayiya cevirme islemi {} olarak tamamlandi!'.format(status))
 
 tam_sayiya_cevir3()
+
+
+
+print("---------dongu -- ")
+
+
+def tam_sayiya_cevir_dongu():
+
+    while True:                   #bir sayi girene kadar devam edecek
+         giris1 = input("bir onadalik sayi girniz:")
+
+         try:
+            giris1 = float(giris1)
+            print("yuvarlama isleminin sonucu:{}".format(round(float(giris1))))
+            break
+         except:        #haricinde
+            print("{} girdiniz veri tipini ondalik sayiya cevrilemyor".format(giris1))
+            pass
+
+tam_sayiya_cevir_dongu()
